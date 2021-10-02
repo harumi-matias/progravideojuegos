@@ -37,7 +37,15 @@
             </animateMotion>
         </image>
 </svg>
-<audio src="audio.mp3" preload="none" controls></audio>
-<audio src="audio.mp3" autoplay loop></audio>
+<audio id="audio" src="audio.mp3" type="audio/mpeg">
+</audio>
+<script>
+var audio1=document.getElementById("audio");
+function playAudio()
+    { 
+        audio1.play();
+    }
+
+</script>
 </body>
 </html>
