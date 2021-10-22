@@ -1,0 +1,72 @@
+
+html {
+    font-size: 62.5%; 
+    /* Normalizar para REMS */
+}
+
+body {
+font-family: roboto;
+font-size: 1.6rem;
+}
+
+
+/* Principales */
+
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3.6rem;
+}
+h3{
+    font-size: 3rem;
+}
+h4{
+    font-size: 2.6rem;
+}
+
+.redes-sociales li a i {
+    color: white;
+    font-size: 2rem;
+    padding-left: 2rem;
+    padding-top: 0.5rem;
+    opacity: .5;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+  
+  .redes-sociales li a i:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+
+  #barra-redes{
+    background-color: red;
+}
+  
+  /*-----------------------------
+  5. ESTILOS MENÚ NAVEGACIÓN
+  -------------------------------*/
+  .navbar-nav {
+      background-color: red;
+  }
+
+  .navbar-nav li a {
+    font-size: 2rem;
+    color: white;
+    padding-right: 3rem;
+    opacity: 1;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  
+  .navbar-nav li a:hover {
+    opacity: 0.5;
+  }
+  
+  .rompecabezas{
+      margin: 4rem;
+  }
+
+
