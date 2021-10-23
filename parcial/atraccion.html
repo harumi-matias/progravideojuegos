@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="/css/all.min.css">
+		<link rel="stylesheet" href="/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/css/estilos.css">
+        <title>Mapa Interactivo</title>
+        </head>
+    <body>
+		<header>
+			<section id="barra-redes">
+				<div class="container-fluid text-center">
+					<div class="row justify-content-center">                   
+						<div class="col-12 col-sm-auto">
+							<ul class="redes-sociales list-unstyled d-inline-flex">
+								<li><a href="https://twitter.com/sixflags"><i class="fab fa-twitter"></i></a></li>
+					<li><a href="https://www.facebook.com/sixflagsmexico/"><i class="fab fa-facebook-f"></i></a></li>
+					<li><a href="https://www.instagram.com/sixflagsmexico/"><i class="fab fa-instagram"></i></a></li>
+					<li><a href="https://www.youtube.com/user/SixFlagsMexicoRP"><i class="fab fa-youtube"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+				<nav class="col-12 navbar-nav">
+					<ul class="nav justify-content-center">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="index.html">Mapa</a>
+							</li>
+							<li class="nav-item">
+							<a class="nav-link" href="atraccion.html">Atracción</a>
+							</li>
+							<li class="nav-item">
+							<a class="nav-link" href="rompecabezas.html">Rompecabezas</a>
+						</li>
+					</ul>
+				</nav>	
+		</header>
+		<h2 style="text-align: center;">Six Flags </br> Animación</h2>
+        <svg version="1.1" id="Capa_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1900 940">
+			<style type="text/css">
+				.st0{fill:none;stroke:#9D1FFF;stroke-width:3;stroke-miterlimit:10;}
+				.st1{fill:none;stroke:none;stroke-width:3.3582;stroke-miterlimit:10;}
+				.st2{fill:none;stroke:none;stroke-width:3.3582;stroke-miterlimit:10;}
+			</style>
+			<image xlink:href="images/feria.jpg"></image>
+			<path id="rueda" class="st0" d="M665.9,125.4c16.6,26,26.2,56.9,26.2,90.1c0,92.8-75.2,168-168,168s-168-75.2-168-168s75.2-168,168-168
+				c53.2,0,100.7,24.7,131.5,63.4"/>
+				<image xlink:href="images/1.png" width="100" height="100" x="-50" y="-50">
+					<animateMotion dur="10s" repeatCount="indefinite">
+						<mpath xlink:href="#rueda"></mpath>
+					</animateMotion>
+				</image>
+				<path id="pato" class="st1" d="M1590.8,700.5c3.7,23-45.2,48.5-110.1,57.3c-65.4,8.9-122.3-2.7-127-25.8l0.2,0c-3.7-23,45.2-48.5,110.1-57.3 c65.4-8.9,122.3,2.7,127,25.8L1590.8,700.5z"/>
+				<image xlink:href="images/pato.png" width="130" height="130" x="-80" y="-80">
+					<animateMotion from="2s" to="2s" dur="8s" repeatCount="indefinite">
+						<mpath xlink:href="#pato"></mpath>
+					</animateMotion>
+				</image>
+			<path id="montana" class="st2" d="M651.8,520.9c0,0,169-196.1,271-201.7s297.2,133.9,297.2,133.9s50.5,47.7,138.4-5.3s145.3-154.6,265.2-148.3 c147.1,7.7,352.5,316.6,352.5,316.6"/>
+			<image xlink:href="images/carrito.png" width="150" height="150" x="-100" y="-100">
+				<animateMotion  begin="0s" dur="10s" rotate="auto" repeatCount="indefinite">
+					<mpath xlink:href="#montana"></mpath>
+				</animateMotion>
+			</image>
+			</svg>
+
+

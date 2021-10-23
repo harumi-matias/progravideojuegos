@@ -13,16 +13,17 @@ font-size: 1.6rem;
 /* Principales */
 
 h1{
-    font-size: 4rem;
-}
-h2{
-    font-size: 3.6rem;
-}
-h3{
     font-size: 3rem;
+    font-family: roboto;
+    font-weight: bold;
+    margin: 2rem;
 }
-h4{
-    font-size: 2.6rem;
+
+h2{
+  font-size: 3rem;
+  font-family: roboto;
+  font-weight: bold;
+  margin: 2rem;
 }
 
 .redes-sociales li a i {
@@ -66,7 +67,7 @@ h4{
   }
   
   .rompecabezas{
-      margin: 4rem;
+      margin: 2rem;
   }
 
 
