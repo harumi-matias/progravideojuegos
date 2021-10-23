@@ -43,16 +43,36 @@
 		<h2 style="text-align: center;">Six Flags </br> Animación</h2>
         <svg version="1.1" id="Capa_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1900 940">
 			<style type="text/css">
-				.st0{fill:none;stroke:#9D1FFF;stroke-width:3;stroke-miterlimit:10;}
-				.st1{fill:none;stroke:none;stroke-width:3.3582;stroke-miterlimit:10;}
+				.st0{fill:none;stroke:none;stroke-width:3;stroke-miterlimit:10;}
+				.st1{fill:none;stroke:none;stroke-width:3;stroke-miterlimit:10;}
 				.st2{fill:none;stroke:none;stroke-width:3.3582;stroke-miterlimit:10;}
+				.st3{fill:none;stroke:none;stroke-width:3.3582;stroke-miterlimit:10;}
 			</style>
 			<image xlink:href="images/feria.jpg"></image>
 			<path id="rueda" class="st0" d="M665.9,125.4c16.6,26,26.2,56.9,26.2,90.1c0,92.8-75.2,168-168,168s-168-75.2-168-168s75.2-168,168-168
 				c53.2,0,100.7,24.7,131.5,63.4"/>
 				<image xlink:href="images/1.png" width="100" height="100" x="-50" y="-50">
-					<animateMotion dur="10s" repeatCount="indefinite">
-						<mpath xlink:href="#rueda"></mpath>
+					<animateMotion id="forward" 
+                   dur="10s" begin="0s"
+                   keyPoints="0.3;1;0;0.3"
+                   keyTimes="0;0.7;0.7;1"
+                   calcMode="linear" >
+      <mpath xlink:href="#rueda"/>
+    </animateMotion>
+    <animateMotion id="backward" 
+                   begin="forward.end + 1s"
+                   dur="10s"
+                   keyPoints="0.3;0;1;0.3"
+                   keyTimes="0;0.3;0.3;1"
+                   calcMode="linear" >
+      <mpath xlink:href="#rueda"/>
+    </animateMotion>
+				</image>
+			<path id="rueda_2" class="st1" d="M665.9,125.4c16.6,26,26.2,56.9,26.2,90.1c0,92.8-75.2,168-168,168s-168-75.2-168-168s75.2-168,168-168
+				c53.2,0,100.7,24.7,131.5,63.4"/>
+				<image xlink:href="images/roja.png" width="100" height="100" x="-50" y="-50">
+					<animateMotion begin="0s" dur="9s" repeatCount="indefinite">
+						<mpath xlink:href="#rueda_2"></mpath>
 					</animateMotion>
 				</image>
 				<path id="pato" class="st1" d="M1590.8,700.5c3.7,23-45.2,48.5-110.1,57.3c-65.4,8.9-122.3-2.7-127-25.8l0.2,0c-3.7-23,45.2-48.5,110.1-57.3 c65.4-8.9,122.3,2.7,127,25.8L1590.8,700.5z"/>
