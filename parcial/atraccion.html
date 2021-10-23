@@ -53,15 +53,15 @@
 				c53.2,0,100.7,24.7,131.5,63.4"/>
 				<image xlink:href="images/1.png" width="100" height="100" x="-50" y="-50">
 					<animateMotion id="forward" 
-                   dur="10s" begin="0s"
+                   dur="10s" begin="0s"  fill="freeze"
                    keyPoints="0.3;1;0;0.3"
                    keyTimes="0;0.7;0.7;1"
                    calcMode="linear" >
       <mpath xlink:href="#rueda"/>
     </animateMotion>
     <animateMotion id="backward" 
-                   begin="forward.end + 1s"
-                   dur="10s"
+                   begin="forward.end"
+                   dur="10s" fill="freeze"
                    keyPoints="0.3;0;1;0.3"
                    keyTimes="0;0.3;0.3;1"
                    calcMode="linear" >
