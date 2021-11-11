@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <title>Imágenes con paralaje</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/jparallax.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        .parallax-viewport{
+            width: 800px;
+            height: 300px;
+            max-width: 60em;
+            background-color: #aebcc9;
+        }
+    </style>
+</head>
+<body class="contenedor">
+    <h1>¿Qué es la Industria 4.0?</h1>
+    <p>La Cuarta Revolución Industrial, también conocida como industria 4.0, está cambiando la forma en que los negocios operan y, por lo tanto, los entornos en los se ven obligados a competir.</p>
+    <!-- Inicia ventana de paralaje  -->
+    <div class="parallax-viewport" id="parallax">
+        <!-- Capas de paralaje  -->
+        <div class="parallax-layer" style="width: 2256px; height: 461px;">
+          <img src="imagen/world.jpg" style="position: absolute; left: 10px; top: 0px;">
+        </div>
+        <div class="parallax-layer" style="width: 1274px; height: 296px;">
+            <img src="imagen/layer2.png">
+        </div>
+        <div class="parallax-layer" style="width: 1920px; height: 257px;">
+            <img src="imagen/layer1.png" style="position: absolute; top: 43px; left: -0px;">
+        </div>
+    </div>
+    <div class="info">
+        <h2 style="color: rgb(106, 177, 248);">¿Cuáles son los impactos de la industria 4.0?</h2>
+        <p>Los impactos de la Industria 4.0 pueden sentirse en múltiples niveles: en grandes ecosistemas, a nivel organizacional y a nivel individual (en empleados y clientes):
+
+        </p>
+    <ul>
+        <li>
+        <p>Ecosistemas. Además del cambio en el que las empresas operan y en la producción de bienes, la Industria 4.0 afecta a todos los agentes del ecosistema (los proveedores, los clientes, las consideraciones regulatorias, los inversores, terceros…). Estas tecnologías permiten interacciones entre cada punto de una red.</p></li>
+        <li><p>Organizaciones. La capacidad de ajustarse y aprender de los datos en tiempo real puede hacer que las organizaciones sean más receptivas, proactivas y predictivas. Asimismo, permite a la organización reducir sus riesgos en materia de productividad.</p></li>
+        <li><p>Individuos. La Industria 4.0 puede significar diferentes cosas para cada uno. Por ejemplo, para los empleados puede significar un cambio en el trabajo que van a realizar, mientras que para los clientes significaría una mayor personalización en los productos y servicios que satisfagan mejor sus necesidades. </p></li>
+    </ul>
+    </div>
+    <div class="info">
+        <h2  style="color: rgb(106, 177, 248);">¿Porqué es importante la industria 4.0?</h2>
+        <p>Es importante entender el potencial de esta cuarta revolución industrial porque no solo afectará a los procesos de fabricación. Su alcance es mucho más amplio, afectando a todas las industrias y sectores e incluso a la sociedad. La industria 4.0 puede mejorar las operaciones de negocio y el crecimiento de los ingresos, transformado los productos, la cadena de suministro y las expectativas de los clientes. Es probable que dicha revolución cambie la forma en que hacemos las cosas, pero también podría afectar cómo los clientes interactúan con ellas y las experiencias que esperan tener mientras interactúan con las empresas. Más allá de eso, podría generar cambios en la fuerza laboral, lo que requeriría nuevas capacidades y roles.</p>
+        <p>Además, las tecnologías relacionadas con la Industria 4.0 también pueden conducir a productos y servicios completamente nuevos. El uso de sensores y dispositivos portátiles, el análisis y la robótica, entre otros, permitirán mejoras en los productos de diversas maneras, desde la creación de prototipos y pruebas hasta la incorporación de conectividad a productos previamente desconectados. Estos cambios en los productos se traducen, a su vez, en cambios en la cadena de suministro y, consecuentemente, en los clientes. </p>
+    </div>
+    <!-- El JavaScript  -->
+    <script src="js/jquery1.7.2.js"></script>
+    <script src="js/jquery.event.frame.js"></script>
+    <script src="js/jquery.parallax.js"></script>
+    <script>
+        jQuery(document).ready(function(){
+            jQuery('#parallax .parallax-layer')
+            
+            .parallax({
+                mouseport: jQuery('#parallax')
+            });
+        });
+    </script>
+</body>
+</html>

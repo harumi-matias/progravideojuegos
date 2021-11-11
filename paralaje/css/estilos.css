@@ -1,0 +1,32 @@
+body{
+background-color: rgb(0, 44, 102);
+color: silver;
+font-family: 'Ubuntu Mono', monospace;
+}
+h1{
+text-align: center;
+font-size: 38px;
+font-weight: 700;
+color: rgb(255, 255, 255);
+}
+
+.contenedor{
+width: 800px;
+margin: auto;
+text-align: justify;
+}
+p{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-style: italic;
+}
+.info p{
+    text-align: left;
+    font-style: normal;
+}
+
+.info li{
+    font-size: 20px;
+}
+
