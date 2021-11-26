@@ -26,21 +26,6 @@ h2{
   margin: 2rem;
 }
 
-.redes-sociales li a i {
-    color: white;
-    font-size: 2rem;
-    padding-left: 2rem;
-    padding-top: 0.5rem;
-    opacity: .5;
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-  }
-  
-  .redes-sociales li a i:hover {
-    opacity: 1;
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
-}
   
   /*-----------------------------
   5. ESTILOS MENÚ NAVEGACIÓN
@@ -65,8 +50,5 @@ h2{
     color: rgb(38, 6, 75);
   }
   
-  .rompecabezas{
-      margin: 2rem;
-  }
 
 
