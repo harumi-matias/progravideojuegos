@@ -9,6 +9,9 @@ font-family: roboto;
 font-size: 1.6rem;
 }
 
+canvas {
+  margin: auto;
+}
 
 /* Principales */
 

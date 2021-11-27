@@ -1,3 +1,5 @@
+
+
 // La variable "game" nos sirve  para una instancia del juego
 var game = new Phaser.Game(713,400, Phaser.AUTO, '', {preload: preload, create: create, update: update});
 
