@@ -29,6 +29,24 @@ h2{
   margin: 2rem;
 }
 
+.controles {
+  font-size: 1.8rem;
+  font-family: roboto;
+  font-weight: bold;
+  margin: 4rem;
+
+}
+
+.letras{
+  background-color:rgb(135, 81, 206);
+  color: white;
+  padding-left: 1rem;
+  padding-right: 1rem ;
+  padding-bottom: .5rem;
+  padding-top: .5rem;
+  border-radius: .5rem;
+}
+
   
   /*-----------------------------
   5. ESTILOS MENÚ NAVEGACIÓN
