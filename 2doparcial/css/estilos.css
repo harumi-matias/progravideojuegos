@@ -1,0 +1,75 @@
+
+html {
+    font-size: 62.5%; 
+    /* Normalizar para REMS */
+}
+
+body {
+font-family: roboto;
+font-size: 1.6rem;
+}
+
+canvas {
+  margin: auto;
+}
+
+/* Principales */
+
+h1{
+    font-size: 3rem;
+    font-family: roboto;
+    font-weight: bold;
+    margin: 2rem;
+}
+
+h2{
+  font-size: 3rem;
+  font-family: roboto;
+  font-weight: bold;
+  margin: 2rem;
+}
+
+.controles {
+  font-size: 1.8rem;
+  font-family: roboto;
+  font-weight: bold;
+  margin: 4rem;
+
+}
+
+.letras{
+  background-color:rgb(135, 81, 206);
+  color: white;
+  padding-left: 1rem;
+  padding-right: 1rem ;
+  padding-bottom: .5rem;
+  padding-top: .5rem;
+  border-radius: .5rem;
+}
+
+  
+  /*-----------------------------
+  5. ESTILOS MENÚ NAVEGACIÓN
+  -------------------------------*/
+  .navbar-nav {
+      background-color: rgb(135, 81, 206);
+      height: 80px;
+  }
+
+  .navbar-nav li a {
+    font-size: 2.3rem;
+    color: white;
+    padding-right: 3rem;
+    opacity: 1;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .navbar-nav li a:hover {
+    opacity: 1;
+    color: rgb(38, 6, 75);
+  }
+  
+
+
