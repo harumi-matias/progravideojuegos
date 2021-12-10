@@ -34,9 +34,9 @@ function create(){
     player2.animations.add('aba', [0, 1, 2, 3], 5,true);
 
     player3.animations.add('der', [0, 1, 2], 8,true);
-    player3.animations.add('izq', [0, 1, 2], 8,true);
-    player3.animations.add('arr', [0, 1, 2], 8,true);
-    player3.animations.add('aba', [0, 1, 2], 8,true);
+    player3.animations.add('izq', [3, 4, 5], 8,true);
+    player3.animations.add('arr', [6, 7, 8], 8,true);
+    player3.animations.add('aba', [9, 10, 11], 8,true);
 
     //Asignar las animaciones a las teclas es importante tomar en cuenta la K en mayúscula para que si funcione la instrucción
     derecha = game.input.keyboard.addKey(Phaser.Keyboard.D);
@@ -50,6 +50,8 @@ function create(){
     abajo2 = game.input.keyboard.addKey(Phaser.Keyboard.K);
     //player3
     cursors = game.input.keyboard.createCursorKeys();
+    arriba3 = game.input.keyboard.addKey(Phaser.Keyboard.N);
+    abajo3 = game.input.keyboard.addKey(Phaser.Keyboard.M);
 
 };
     
@@ -96,25 +98,25 @@ function update(){
         player2.animations.stop();
         player2.frame = 0;
     }
-     //player3
-     if (derecha3.isDown){
+      //player3
+      if (cursors.right.isDown){
         player3.x += 1;
         player3.animations.play('der');
     }
-    else if (izquierda2.isDown){
-        player2.x -= 1;
-        player2.animations.play('izq');
+    else if (cursors.left.isDown){
+        player3.x -= 1;
+        player3.animations.play('izq');
     }
-    else if (arriba2.isDown){
-        player2.y -= 1;
-        player2.animations.play('arr');
+    else if (arriba3.isDown){
+        player3.y -= 1;
+        player3.animations.play('arr');
     }
-    else if (abajo2.isDown){
-        player2.y += 1;
-        player2.animations.play('aba');
+    else if (abajo3.isDown){
+        player3.y += 1;
+        player3.animations.play('aba');
     }
     else {
-        player2.animations.stop();
-        player2.frame = 0;
+        player3.animations.stop();
+        player3.frame = 0;
     }
 };
