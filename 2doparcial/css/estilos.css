@@ -7,7 +7,10 @@ html {
 body {
 font-family: Aclonica;
 font-size: 1.6rem;
+background-color: aliceblue;
 }
+
+
 
 canvas {
   margin: auto;
