@@ -5,7 +5,7 @@ html {
 }
 
 body {
-font-family: roboto;
+font-family: Aclonica;
 font-size: 1.6rem;
 }
 
@@ -16,8 +16,8 @@ canvas {
 /* Principales */
 
 h1{
-    font-size: 3rem;
-    font-family: roboto;
+    font-size: 2.3rem;
+    font-family: aclonica;
     font-weight: bold;
     margin: 2rem;
 }
@@ -29,6 +29,10 @@ h2{
   margin: 2rem;
 }
 
+p{
+  font-size: 1.5rem;
+}
+
 .controles {
   font-size: 1.8rem;
   font-family: roboto;
@@ -38,15 +42,15 @@ h2{
 }
 
 .letras{
-  background-color:rgb(135, 81, 206);
+  background-color:rgb(58, 165, 147);
   color: white;
   padding-left: 1rem;
   padding-right: 1rem ;
   padding-bottom: .5rem;
   padding-top: .5rem;
   border-radius: .5rem;
+  margin: .5rem;
 }
-
   
   /*-----------------------------
   5. ESTILOS MENÚ NAVEGACIÓN

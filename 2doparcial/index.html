@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
             <link rel="stylesheet" href="css/normalize.css">
             <link rel="stylesheet" href="css/all.min.css">
             <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -16,41 +18,21 @@
                 <header class="blog-header py-3">
                   <div class="row flex-nowrap justify-content-between align-items-center">
                     <div class="col-12 text-center">
-                      <a class="blog-header-logo text-dark" href="#">Historia de los Videojuegos</a>
+                      <a class="h1 text-dark" style="text-decoration: none; font-size: 5rem" href="index.html">Historia de los Videojuegos</a>
                     </div>
                   </div>
                 </header>
               
-                <div class="nav-scroller py-1 mb-2">
-                  <nav class="nav d-flex justify-content-between">
-                    <a class="p-2 link-secondary" href="#">1980-1989</a>
-                    <a class="p-2 link-secondary" href="#">Consolas</a>
-                    <a class="p-2 link-secondary" href="#">1985</a>
-                    <a class="p-2 link-secondary" href="#">Portatiles</a>
+                <div class="nav-scroller py-1 mb-2 text">
+                  <nav class="nav d-flex justify-content-center">
+                    <a class="p-2 link-secondary" style="text-decoration: none; font-size: 2.2rem; margin-right: 2rem;" href="decada.html" target="ventana">1980</a>
+                    <a class="p-2 link-secondary" style="text-decoration: none; font-size: 2.2rem; margin-right: 2rem;" href="sonic.html" target="ventana">1983</a>
+                    <a class="p-2 link-secondary" style="text-decoration: none; font-size: 2.2rem; margin-right: 2rem;" href="autos.html" target="ventana">Autos</a>
+                    <a class="p-2 link-secondary" style="text-decoration: none; font-size: 2.2rem; margin-right: 2rem;" href="#">1985</a>
                   </nav>
                 </div>
               </div>
-            <h1 style="text-align: center;">La década de los 8 bits</h1>
-            <div class="container">
-                <p>
-                    Los años 80 comenzaron con un fuerte crecimiento en el sector del videojuego alentado por la popularidad de los salones de máquinas recreativas y de las primeras videoconsolas aparecidas durante la década de los 70.
-                </br></br>
-                    Durante estos años destacan sistemas como Oddyssey 2 (Phillips), Intellivision (Mattel), Colecovision (Coleco), Atari 5200, Commodore 64, Turbografx (NEC). Por otro lado en las máquinas recreativas triunfaron juegos como el famoso Pacman (Namco), Battle Zone (Atari), Pole Position (Namco), Tron (Midway) o Zaxxon (Sega).
-                </p>
-            </div>
-            <div>
-            <p>
-                <ul  class="controles text-center" style="list-style: none;">
-                    <li>
-                        <spam class="letras">A</spam> Caminar
-                        <spam class="letras">D</spam> Correr
-                        <spam class="letras">W</spam> Brincar
-                        <spam class="letras">S</spam> Regresar
-                    </li>
-                </ul>
-            </p>
-            </div>
-            <iframe class="container-fluid" id="ventana" src="prueba.html" frameborder="0" width="3000" height="1350"></iframe>
+            <iframe name="ventana" class="container-fluid" src="decada.html" frameborder="0" width="3000" height="1350"></iframe>
     </head>
 </body>
 </html>

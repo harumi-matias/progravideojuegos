@@ -8,6 +8,9 @@ function preload(){
     game.load.spritesheet('fantasmarosa', 'sprites/fantasma_rosa.png', 67, 67);
     game.load.spritesheet('pacman', 'sprites/pacman.png', 67, 67);
     game.load.image('fondo','fondos/pacman.jpg');
+    //Precarga de sonidos
+    game.load.audio('inicio',['sounds/inicio.ogg', 'sounds/inicio.mp3']);
+    game.load.audio('arranque',['sounds/go.ogg', 'sounds/go.mp3']);
 }; 
 
 // Colocamos todo lo que precargamos en el escenario para que sean visibles
@@ -50,9 +53,13 @@ function create(){
     abajo2 = game.input.keyboard.addKey(Phaser.Keyboard.K);
     //player3
     cursors = game.input.keyboard.createCursorKeys();
-    arriba3 = game.input.keyboard.addKey(Phaser.Keyboard.N);
-    abajo3 = game.input.keyboard.addKey(Phaser.Keyboard.M);
 
+    //Agregar los sonidos
+    inicio = game.add.audio('inicio');
+    inicio.volume = 0.01; //valor del volumen que va de 0-1 donde 1 es el 100% del volumen
+
+    arranque = game.add.audio('arranque');
+    arranque.volume = 0.01;
 };
     
 // Permite actualizar el juego para tener moviemientos, animaciones, etc.
@@ -60,22 +67,27 @@ function update(){
     if (derecha.isDown){
         player.x += 1;
         player.animations.play('der');
+        inicio.play();
     }
     else if (izquierda.isDown){
         player.x -= 1;
         player.animations.play('izq');
+        inicio.play();
     }
     else if (arriba.isDown){
         player.y -= 1;
         player.animations.play('arr');
+        inicio.play();
     }
     else if (abajo.isDown){
         player.y += 1;
         player.animations.play('aba');
+        inicio.play();
     }
     else {
         player.animations.stop();
         player.frame = 0;
+
     }
     //player2
     if (derecha2.isDown){
@@ -102,18 +114,22 @@ function update(){
       if (cursors.right.isDown){
         player3.x += 1;
         player3.animations.play('der');
+        arranque.play()
     }
     else if (cursors.left.isDown){
         player3.x -= 1;
         player3.animations.play('izq');
+        arranque.play()
     }
-    else if (arriba3.isDown){
+    else if (cursors.up.isDown){
         player3.y -= 1;
         player3.animations.play('arr');
+        arranque.play()
     }
-    else if (abajo3.isDown){
+    else if (cursors.down.isDown){
         player3.y += 1;
         player3.animations.play('aba');
+        arranque.play()
     }
     else {
         player3.animations.stop();
